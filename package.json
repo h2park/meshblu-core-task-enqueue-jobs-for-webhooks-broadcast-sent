@@ -1,6 +1,6 @@
 {
   "name": "meshblu-core-task-enqueue-jobs-for-webhooks-broadcast-sent",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Meshblu core task meshblu-core-task-enqueue-jobs-for-webhooks-broadcast-sent",
   "keywords": [
     "meshblu",
@@ -25,11 +25,12 @@
   "dependencies": {
     "coffee-script": "^1.10.0",
     "lodash": "^4.6.1",
-    "meshblu-core-manager-webhook": "^2.0.0"
+    "meshblu-core-manager-webhook": "^2.1.0"
   },
   "devDependencies": {
     "@octoblu/redis-ns": "^1.2.2",
     "chai": "^3.5.0",
+    "chai-subset": "^1.2.2",
     "coffee-coverage": "^0.7.0",
     "coffee-script": "^1.10.0",
     "fakeredis": "^1.0.3",
