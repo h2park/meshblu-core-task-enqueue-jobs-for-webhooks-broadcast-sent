@@ -27,6 +27,13 @@ class EnqueueJobsForWebhooksBroadcastSent
 
   _doErrorCallback: (request, error, callback) =>
     code = error.code ? 500
-    @_doCallback request, code, callback
+    response =
+      metadata:
+        responseId: request.metadata.responseId
+        code: code
+        status: http.STATUS_CODES[code]
+        error:
+          message: error.message
+    callback null, response
 
 module.exports = EnqueueJobsForWebhooksBroadcastSent
